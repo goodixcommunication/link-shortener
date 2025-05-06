@@ -1,0 +1,10 @@
+
+services:
+  - type: web
+    name: link-shortener
+    env: python
+    buildCommand: ""
+    startCommand: python3 shortener_app.py
+    envVars:
+      - key: FLASK_ENV
+        value: development
